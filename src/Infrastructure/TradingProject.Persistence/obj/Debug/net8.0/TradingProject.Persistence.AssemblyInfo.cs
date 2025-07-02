@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TradingProject.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e5f2f6ba641fbbd1c1be8e4a34ae7ecd8e088e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a152de080cb4a23a23db71c7934dbd789ed891b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TradingProject.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TradingProject.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
