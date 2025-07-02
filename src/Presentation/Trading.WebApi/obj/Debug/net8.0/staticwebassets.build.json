@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xBLND4HRWUn1jdCN5xJwuqpak5fq84xbXShmABXi1jU=",
+  "Source": "Trading.WebApi",
+  "BasePath": "_content/Trading.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

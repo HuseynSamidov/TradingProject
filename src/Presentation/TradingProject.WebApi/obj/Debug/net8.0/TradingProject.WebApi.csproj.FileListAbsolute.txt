@@ -1,0 +1,8 @@
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.AssemblyInfoInputs.cache
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.AssemblyInfo.cs
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MSI\source\repos\TradingProject\src\Presentation\TradingProject.WebApi\obj\Debug\net8.0\TradingProject.WebApi.sourcelink.json

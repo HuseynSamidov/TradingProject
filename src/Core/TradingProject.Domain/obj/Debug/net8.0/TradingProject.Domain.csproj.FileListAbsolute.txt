@@ -1,0 +1,12 @@
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\bin\Debug\net8.0\TradingProject.Domain.deps.json
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\bin\Debug\net8.0\TradingProject.Domain.dll
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\bin\Debug\net8.0\TradingProject.Domain.pdb
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.AssemblyInfoInputs.cache
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.AssemblyInfo.cs
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.sourcelink.json
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.dll
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\refint\TradingProject.Domain.dll
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\TradingProject.Domain.pdb
+C:\Users\MSI\source\repos\TradingProject\src\Core\TradingProject.Domain\obj\Debug\net8.0\ref\TradingProject.Domain.dll
