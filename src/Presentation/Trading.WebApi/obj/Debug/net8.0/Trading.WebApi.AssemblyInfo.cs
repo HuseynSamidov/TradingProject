@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trading.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a152de080cb4a23a23db71c7934dbd789ed891b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cd8eb333a8d8a5026b0e532292ae9565219e62d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trading.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trading.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
