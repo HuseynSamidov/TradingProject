@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\TradingProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F319252-206A-4B44-8091-43E2E15AAF6F}|src\\Presentation\\Trading.WebApi\\Trading.WebApi.csproj|c:\\users\\msi\\source\\repos\\tradingproject\\src\\presentation\\trading.webapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F319252-206A-4B44-8091-43E2E15AAF6F}|src\\Presentation\\Trading.WebApi\\Trading.WebApi.csproj|solutionrelative:src\\presentation\\trading.webapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{847E88CE-1CC0-42DC-B796-B2ADB95FD413}|src\\Infrastructure\\TradingProject.Persistence\\TradingProject.Persistence.csproj|c:\\users\\msi\\source\\repos\\tradingproject\\src\\infrastructure\\tradingproject.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{847E88CE-1CC0-42DC-B796-B2ADB95FD413}|src\\Infrastructure\\TradingProject.Persistence\\TradingProject.Persistence.csproj|solutionrelative:src\\infrastructure\\tradingproject.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\TradingProject\\src\\Presentation\\Trading.WebApi\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Trading.WebApi\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\TradingProject\\src\\Presentation\\Trading.WebApi\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "src\\Presentation\\Trading.WebApi\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T19:00:46.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\TradingProject\\src\\Infrastructure\\TradingProject.Persistence\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\TradingProject.Persistence\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\TradingProject\\src\\Infrastructure\\TradingProject.Persistence\\Services\\UserService.cs",
+              "RelativeToolTip": "src\\Infrastructure\\TradingProject.Persistence\\Services\\UserService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwBIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T18:49:20.093Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

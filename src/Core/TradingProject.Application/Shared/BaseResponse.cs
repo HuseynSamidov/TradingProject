@@ -1,10 +1,10 @@
 ﻿using System.Net;
 
-namespace TradingProject.Application.Shared.Settings;
-
-public class BaseResponse<T>
+namespace TradingProject.Application.Shared
 {
-    
+    public class BaseResponse<T>
+    {
+
         public bool Success { get; set; }
         public string? Message { get; set; }
         public HttpStatusCode StatusCode { get; set; }
@@ -38,4 +38,6 @@ public class BaseResponse<T>
             Success = true;
             StatusCode = statusCode;
         }
+    }
+
 }

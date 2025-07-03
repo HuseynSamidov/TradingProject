@@ -1,4 +1,4 @@
-﻿namespace TradingProject.Application.Shared.Settings
+﻿namespace TradingProject.Application.Shared
 {
     public class TokenResponse
     {
@@ -6,5 +6,4 @@
         public string? RefreshToken { get; set; }
         public DateTime? ExpireDate { get; set; }
     }
-
 }

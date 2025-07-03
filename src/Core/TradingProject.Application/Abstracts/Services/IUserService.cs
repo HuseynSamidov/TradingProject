@@ -1,4 +1,5 @@
 ﻿using TradingProject.Application.DTOs.UserDTOs;
+using TradingProject.Application.Shared;
 using TradingProject.Application.Shared.Settings;
 
 namespace TradingProject.Application.Abstracts.Services;
