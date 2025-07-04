@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -91,6 +92,21 @@ namespace TradingProject.Persistence.Services
             };
             return new("Token generated", tokenResponse, HttpStatusCode.OK);
         }
+
+        //public async Task<bool> ResetPasswordAsync(string username, string newPassword)
+        //{
+        //    var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Username == username);
+        //    if (user == null)
+        //        return false;
+
+        //    // Parolu hash-lamaq tövsiyə olunur!
+        //    user.Password = newPassword;
+
+        //    _userManager.Users.Update(user);
+        //    await _userManager.SaveChangesAsync();
+
+        //    return true;
+        ////}
         private string GenerateJwtToken(string userEmail)
         {
             var claims = new[]
@@ -113,7 +129,23 @@ namespace TradingProject.Persistence.Services
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+        async Task<BaseResponse<TokenResponse>> ResetPassword(string username, string password)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName == username);
+            if (user == null)
+                return false;
 
+            // Parolu hash-lamaq tövsiyə olunur!
+            user.Password = newPassword;
+
+            _userManager.Users.Update(user);
+            await _userManager.SaveChangesAsync();
+
+            return true;
+        }
+        
+          
+        
     }
 
 }

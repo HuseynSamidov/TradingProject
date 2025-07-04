@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v7bclrDP8Co=",
+  "dgSpecHash": "+AqY4KEcAik=",
   "success": true,
   "projectFilePath": "C:\\Users\\MSI\\source\\repos\\TradingProject\\src\\Presentation\\Trading.WebApi\\Trading.WebApi.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.3.0\\microsoft.aspnetcore.authentication.cookies.2.3.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.15\\microsoft.aspnetcore.authentication.jwtbearer.8.0.15.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.15\\microsoft.aspnetcore.cryptography.internal.8.0.15.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.15\\microsoft.aspnetcore.cryptography.keyderivation.8.0.15.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.3.0\\microsoft.aspnetcore.dataprotection.2.3.0.nupkg.sha512",
@@ -54,8 +55,8 @@
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.12.1\\microsoft.identitymodel.abstractions.8.12.1.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.12.1\\microsoft.identitymodel.jsonwebtokens.8.12.1.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.logging\\8.12.1\\microsoft.identitymodel.logging.8.12.1.nupkg.sha512",
-    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
-    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.12.1\\microsoft.identitymodel.tokens.8.12.1.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",

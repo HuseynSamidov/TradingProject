@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using System.Security.Claims;
 using TradingProject.Application.Abstracts.Services;
 using TradingProject.Application.DTOs.CategoryDto;
 using TradingProject.Application.DTOs.UserDTOs;
@@ -43,15 +45,23 @@ public class AccountsController : ControllerBase
         return "value";
     }
 
+    [HttpGet]
+    [Authorize(Roles = "Admin")]
+    [ProducesResponseType(typeof(BaseResponse<CategoryGetDto>), (int)HttpStatusCode.Created)]
+    [ProducesResponseType(typeof(BaseResponse<string>), (int)HttpStatusCode.NotFound)]
+    [ProducesResponseType(typeof(BaseResponse<string>), (int)HttpStatusCode.InternalServerError)]
+    public IActionResult GetProfile()
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        return Ok($"User ID: {userId}");
+    }
 
 
-    // PUT api/<AccountsController>/5
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] string value)
     {
     }
 
-    // DELETE api/<AccountsController>/5
     [HttpDelete("{id}")]
     public void Delete(int id)
     {
