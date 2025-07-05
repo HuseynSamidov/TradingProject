@@ -129,23 +129,86 @@ namespace TradingProject.Persistence.Services
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        async Task<BaseResponse<TokenResponse>> ResetPassword(string username, string password)
+        public async Task<BaseResponse<TokenResponse>> ResetPassword(UserResetPasswordDto dto)
         {
-            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName == username);
-            if (user == null)
-                return false;
+            #region Pass
+            //var user = await _userManager.AppUser.FirstOrDefaultAsync(u => u.Name == Name);
+            //if (user == null)
+            //    return false;
 
-            // Parolu hash-lamaq tövsiyə olunur!
-            user.Password = newPassword;
+            //// Parolu hash-lamaq tövsiyə olunur!
+            //user.Password = newPassword;
 
-            _userManager.Users.Update(user);
-            await _userManager.SaveChangesAsync();
+            //_userManager.Users.Update(user);
+            //await _userManager.SaveChangesAsync();
 
-            return true;
+            //return true;
+            #endregion
+            var resetUser = await _userManager.FindByNameAsync(dto.Name);
+            if (resetUser == null)
+            {
+                return new BaseResponse<TokenResponse>("This account does not exist", HttpStatusCode.BadRequest);
+            }
+            resetUser.PasswordHash = _userManager.PasswordHasher.HashPassword(resetUser, dto.Password);
+
+            var result = await _userManager.UpdateAsync(resetUser);
+            return new BaseResponse<TokenResponse>("Password changed successfully", HttpStatusCode.OK);
+
         }
-        
-          
-        
+
+        public async Task<BaseResponse<TokenResponse>> ConfirmEmail(UseronfirmEmailDto dto)
+        {
+            var user = await _userManager.FindByIdAsync(dto.UserId);
+            if (user == null)
+            {
+                return new BaseResponse<TokenResponse>("Email cant be found", HttpStatusCode.BadRequest);
+            }
+            var result = await _userManager.ConfirmEmailAsync(user, dto.Token);
+            return new BaseResponse<TokenResponse>("Email confirmed succesfully", HttpStatusCode.OK);
+        }
+
+        public async Task<BaseResponse<List<UserProfileDto>>> GetAllAsync()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            var result = new List<UserProfileDto>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                result.Add(new UserProfileDto
+                {
+                    Id = user.Id,
+                    FullName = user.FullName,
+                    Email = user.Email,
+                    Role = roles.FirstOrDefault() ?? "NoRole",
+                    IsActive = user.LockoutEnd == null || user.LockoutEnd <= DateTimeOffset.Now
+                });
+            }
+
+            return new BaseResponse<List<UserProfileDto>>("All profiles", HttpStatusCode.OK);
+        }
+
+        public async Task<BaseResponse<UserProfileDto>> GetByIdAsync(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+                return new BaseResponse<UserProfileDto>( "User not found", HttpStatusCode.NotFound);
+
+            var roles = await _userManager.GetRolesAsync(user);
+
+            var dto = new UserProfileDto
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Email = user.Email,
+                Role = roles.FirstOrDefault() ?? "NoRole",
+                IsActive = user.LockoutEnd == null || user.LockoutEnd <= DateTimeOffset.Now
+            };
+
+            return new BaseResponse<UserProfileDto>("User profile", HttpStatusCode.OK);
+        }
+
     }
 
 }

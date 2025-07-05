@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Security.Claims;
@@ -50,12 +51,21 @@ public class AccountsController : ControllerBase
     [ProducesResponseType(typeof(BaseResponse<CategoryGetDto>), (int)HttpStatusCode.Created)]
     [ProducesResponseType(typeof(BaseResponse<string>), (int)HttpStatusCode.NotFound)]
     [ProducesResponseType(typeof(BaseResponse<string>), (int)HttpStatusCode.InternalServerError)]
-    public IActionResult GetProfile()
+    public async Task <IActionResult> GetAllProfile()
     {
-        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        return Ok($"User ID: {userId}");
+        var response = await _userService.GetAllAsync();
+        return StatusCode((int)response.StatusCode, response);
     }
 
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(BaseResponse<CategoryGetDto>), (int)HttpStatusCode.Created)]
+    [ProducesResponseType(typeof(BaseResponse<string>), (int)HttpStatusCode.NotFound)]
+    [ProducesResponseType(typeof(BaseResponse<string>), (int)HttpStatusCode.InternalServerError)]
+    public async Task<IActionResult> GetById(string id)
+    {
+        var response = await _userService.GetByIdAsync(id);
+        return StatusCode((int)response.StatusCode, response);
+    }
 
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] string value)
